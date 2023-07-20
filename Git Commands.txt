@@ -1,0 +1,67 @@
+Git Commands:- 
+----------------------------------
+
+Statement						Commands
+--------------------------------------------------------------------------------------------------------------------------------
+
+1) To Configure the user name and email with git.       git configure --global user.name "name",   git configure --global user.email "email"
+2) To create a Repository.    				git init
+3) To add the data in the staging area.   		git add -A
+4) To commit the data in repository. 			git commit -m "commit message"
+5) To Push Data in Git Hub.                             git push origin <Branch Name>
+6) To match the particular file with the last commit	git checkout "filename"
+7) To match all the files in a project with last	git checkout -f
+	commit.
+8) To make the comparison between the files in		git diff
+	 working space and in staging area.
+
+9) To make the comparison between the files in		git diff --staged
+	 last commit and in staging area.
+
+10) To check which files are commited, untracked,	git status
+	modified, deleted, etc.
+
+11) To directly commit the files without adding 	git commit -a -m "Commit Message"
+	into the staging area.
+
+12) To check the history of Commits made by user	git log
+
+13) To check the particular number of commit		git log -p -<Number>     => Number:- Number of Commits history you want to check. ex:- if provided 3 then it shows history of last 3 																						Commits.  
+	history made by the user.
+
+14) To delete the file from the Working space.		git rm "file name"
+
+15) To delete the file from the Staging area		git rm --cached "file name"
+	means to make a file untracked.			
+
+16) Shorthand Command for git Status Command.		git status -s   =>  Output:-   _ _ "file name"  (first dash represents file state in staging area and second one in Working space.)
+
+17) To check which files are staged in git.		git ls-files
+
+18) To delete the folder along with its files		git rm --cached -r <Directory_Name> 
+	from the Staging area.
+
+19) To show all branches.				git branch  (there is an * sign on current working branch)
+
+20) To create a new branch.				git branch <Branch_Name>
+
+21) To enter into the particular branch.		git checkout <Branch_Name>
+
+22) To merge the child branch into master.		git checkout master
+    (first come into master branch )			git merge <Branch_Name>
+
+23) To create and enter into a new branch.		git checkout -b <Branch_Name>
+
+24) To see the remote repository connected
+	to local repository.				git remote -v, git remote
+
+25) To connect a local repository with the
+	specific remote repository.			git remote add origin <Remote_Repository_URL>    => here "origin" is the name 														    given to remote repo url.
+
+26) To set the url of the remote repository.		git remote set-url origin <New_URL>
+
+27) To Push the local repository into the 
+	remote repository.				git push -u origin <Branch_Name>
+
+28) To clone a remote repository.			git clone <Remote_Repository_URL> <Directory_Name_Where_You_Want_To_Clone>, 
+							git clone <Remote_Repository_URL>  =>(This will create a directory named as repo 												name and create a clone inside it.)
